@@ -1,0 +1,16 @@
+[package]
+name = "zellij-picker"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "zellij-picker"
+path = "src/main.rs"
+
+[dependencies]
+ratatui = "0.28"
+crossterm = { version = "0.28.0" }
+regex = "1.12.2"
+
+[profile.release]
+opt-level = 2
