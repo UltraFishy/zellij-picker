@@ -158,12 +158,6 @@ fn ui(f: &mut Frame, app: &App) {
                     .borders(Borders::ALL)
                     .border_style(Style::default().fg(Color::Cyan)),
             )
-            .highlight_style(
-                Style::default()
-                    .bg(Color::Cyan)
-                    .fg(Color::Black)
-                    .add_modifier(Modifier::BOLD),
-            )
             .highlight_symbol("› ");
 
         // We need a mutable copy of list_state for render_stateful_widget
